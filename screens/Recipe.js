@@ -4,7 +4,6 @@ import {Ionicons, MaterialIcons} from "@expo/vector-icons";
 import {useWindowDimensions} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import styleSheet from "react-native-web/src/exports/StyleSheet";
 
 export default function Recipe({navigation, route}) {
     const [recipe, setRecipe] = useState({})

@@ -2,7 +2,6 @@ import {StyleSheet, View, Text, FlatList, Pressable, Image, Dimensions} from "re
 import {useEffect, useState} from "react";
 import {useIsFocused} from "@react-navigation/native";
 import {Ionicons} from "@expo/vector-icons";
-import styleSheet from "react-native-web/src/exports/StyleSheet";
 import LoadingData from "../components/LoadingData";
 
 export default function Category({navigation, route}) {
