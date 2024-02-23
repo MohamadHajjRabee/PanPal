@@ -1,4 +1,4 @@
-import {View, Text, Pressable, StatusBar, Image, ScrollView} from "react-native";
+import {StyleSheet, View, Text, Pressable, StatusBar, Image, ScrollView} from "react-native";
 import {useEffect, useState} from "react";
 import {Ionicons, MaterialIcons} from "@expo/vector-icons";
 import {useWindowDimensions} from 'react-native';
@@ -136,7 +136,7 @@ export default function Recipe({navigation, route}) {
     </LinearGradient>
     ))
 }
-const styles = styleSheet.create({
+const styles = StyleSheet.create({
     headerContainer:{flexDirection: 'row', alignItems: 'center', paddingRight: 42, paddingVertical: 10, paddingLeft: 10},
     headerRecipeName: {flex: 1, textAlign: 'center', color: 'white', fontSize: 16, fontWeight: '700'},
     recipeImage:{width: '100%', height: 250},

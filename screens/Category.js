@@ -1,4 +1,4 @@
-import {View, Text, FlatList, Pressable, ActivityIndicator, Image, Dimensions} from "react-native";
+import {StyleSheet, View, Text, FlatList, Pressable, Image, Dimensions} from "react-native";
 import {useEffect, useState} from "react";
 import {useIsFocused} from "@react-navigation/native";
 import {Ionicons} from "@expo/vector-icons";
@@ -17,7 +17,6 @@ export default function Category({navigation, route}) {
             })
             const result = await res.json()
             if(result){
-                console.log(result)
                 setCategoryRecipes(result)
             }
         }
@@ -56,7 +55,7 @@ export default function Category({navigation, route}) {
     )
 }
 
-const styles = styleSheet.create({
+const styles = StyleSheet.create({
     itemContainer: { margin: 10,  alignItems: 'center', borderWidth: 2, borderRadius: 15, borderColor: '#FFB700', backgroundColor: "#FFB700"},
     itemImage: {height:70, borderTopRightRadius: 15, borderTopLeftRadius: 15},
     itemText: {textAlign: 'center', color: '#292A31',padding: 3, fontWeight: '500'},

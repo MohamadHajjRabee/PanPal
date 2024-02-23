@@ -1,4 +1,4 @@
-import {View, Text, FlatList, Pressable, ActivityIndicator} from "react-native";
+import {StyleSheet, View, Text, FlatList, Pressable, ActivityIndicator} from "react-native";
 import {useEffect, useState} from "react";
 import {useIsFocused} from "@react-navigation/native";
 
@@ -37,7 +37,7 @@ export default function Categories({navigation}) {
     }
     const loadingData = () => {
         return (
-            <View style={}>
+            <View style={styles.loadingDataView}>
                 <ActivityIndicator size="large" color="#4871FF"/>
             </View>
         )
