@@ -11,6 +11,8 @@ PanPal is a mobile application built with React Native to offer a wide range of 
 - **Recipe Page:** Detailed view of each recipe, including image, name, nutrients, preparation & cooking times, ratings, difficulty, serves, description, ingredients, and the cooking process.
 - **Info Page:** Contains information about the developer and the app.
 
+[](preview/preview.gif)
+
 ## Getting Started
 
 ### Prerequisites
