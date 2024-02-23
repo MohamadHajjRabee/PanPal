@@ -13,7 +13,7 @@ export default function Recipe({navigation, route}) {
     useEffect(() => {
         const _id = route.params._id
         async function getRecipe() {
-            const res = await fetch(`https://panpal-backend.onrender.com/recipe/${_id}`, {
+            const res = await fetch(`https://pan-pal-backend.vercel.app/recipe/${_id}`, {
                 method: "GET",
             })
             const result = await res.json()

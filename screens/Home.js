@@ -27,7 +27,7 @@ export default function Home({navigation}) {
     }, [appIsReady, fontsLoaded]);
     const fetchData = async (page = 1) => {
         if(canLoadMore){
-            const res = await fetch(`https://panpal-backend.onrender.com/home?page=${page}`, {
+            const res = await fetch(`https://pan-pal-backend.vercel.app/home?page=${page}`, {
                 method: "GET",
             })
             const resJson = await res.json()

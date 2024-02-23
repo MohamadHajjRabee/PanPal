@@ -8,7 +8,7 @@ export default function Categories({navigation}) {
 
     useEffect(() => {
         async function getCategories() {
-            const res = await fetch(`https://panpal-backend.onrender.com/categories`, {
+            const res = await fetch(`https://pan-pal-backend.vercel.app/categories`, {
                 method: "GET",
             })
             const result = await res.json()

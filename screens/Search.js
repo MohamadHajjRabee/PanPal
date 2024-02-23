@@ -10,7 +10,7 @@ export default function Search({navigation}) {
     useEffect(() => {
         async function search() {
             if(userSearch !== ''){
-                const res = await fetch(`https://panpal-backend.onrender.com/search?userSearch=${userSearch}&page=${1}`, {
+                const res = await fetch(`https://pan-pal-backend.vercel.app/search?userSearch=${userSearch}&page=${1}`, {
                     method: "GET",
                 })
                 const result = await res.json()
@@ -27,7 +27,7 @@ export default function Search({navigation}) {
 
     const getMoreResults = async () => {
         if(userSearch){
-            const res = await fetch(`https://panpal-backend.onrender.com/search?userSearch=${userSearch}&page=${page + 1}`, {
+            const res = await fetch(`https://pan-pal-backend.vercel.app/search?userSearch=${userSearch}&page=${page + 1}`, {
                 method: "GET",
             })
             const result = await res.json()

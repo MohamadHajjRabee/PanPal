@@ -12,7 +12,7 @@ export default function Category({navigation, route}) {
         const category = route.params.category
 
         async function getCategoryRecipes() {
-            const res = await fetch(`https://panpal-backend.onrender.com/category/${category}`, {
+            const res = await fetch(`https://pan-pal-backend.vercel.app/category/${category}`, {
                 method: "GET",
             })
             const result = await res.json()
